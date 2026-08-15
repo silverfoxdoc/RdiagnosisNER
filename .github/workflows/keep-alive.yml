@@ -13,7 +13,7 @@ jobs:
 
       - name: Update timestamp
         working-directory: .github
-        run: TZ=Europe/London date +"%a %e %b %Y %H:%M:%S %Z" > keepalive.txt; ls -alh
+        run: TZ=Europe/London date +"%a %e %b %Y %H:%M:%S %Z" > keepalive.txt
 
       - name: Commit changes
         run: |
