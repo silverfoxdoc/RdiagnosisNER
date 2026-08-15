@@ -12,7 +12,7 @@ jobs:
       - uses: actions/checkout@v6
 
       - name: Update timestamp
-        run: date > .github/keepalive.txt
+        run: TZ=Europe/London date +"%a %e %b %Y %H:%M:%S %Z" > keepalive.txt
 
       - name: Commit changes
         run: |
